@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:url("book_store.jpg")
+}
+
+.first{
+
+    
+    top: 50%;
+    left:50%;
+    position:absolute;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    background: grey;
+   
+    height: 50%;
+}
+ 
+table {
+   
+    margin: 15px;
+    height: 90%;
+    border-radius: 10px;
+}
+ 
+table,td,th {
+    border:2px solid black;
+    border-collapse:collapse;
+    font-weight: bold;
+}
+ table td:hover{
+    font-size:150%;
+    color: white;
+    background: gray;
+}

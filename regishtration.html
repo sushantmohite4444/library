@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="regishtration.css">
+    <script src="registration.js"></script>
+</head>
+<body> 
+    <div class="registration" >
+        <div class="midbox">
+                <fieldset class="contant">
+            <legend>Create Profile</legend>
+        <form method="post" onsubmit="return display()">
+            <label for="f_name">ID:</label>
+            <input type="text" id="f_name" placeholder="Create ID" size="15" maxlength="8"
+           class="size" name="ID"  onblur="return validate()" required   >
+            <br><br>
+            <label for="l_name">Password:</label>
+            <input type="password" id="l_name" placeholder="Create Password" name="password"    class="size"  required>
+            <br><br>
+            <label for="email">Mail ID:</label>
+            <input type="email" id="email" placeholder="email" class="size" size="30"
+            name="email" required>
+            <br><br>
+            <label for="phone">Cell NO.:</label>
+            <input type="tel" id="phone" placeholder="Enter Cell NO." class="size" name="Cell NO." required pattern="[0-9]{10}" title="Number format" maxlength="10">
+            <br> <br>
+            <label for="OTP">OTP:</label> 
+            <input type="text" id="OTP" placeholder="Enter  OTP" name="OTP" class="size" size="6"  maxlength="5" required>
+          <br>
+          <fieldset class="gender">
+          <legend> gender</legend>
+            <input type="radio" id="gender1" name="gen" vlaue="Male" required>
+            <label for="gender1"> Male</label>
+           <br>
+            <input type="radio" id="gender2" name="gen" vlaue="Female" required>
+            <label for="gender2"> Female</label>
+            <br>
+            <input type="radio" id="gender3" name="gen" vlaue="Other" required>
+            <label for="gender3"> Other</label>
+        
+    </fieldset>
+    <input type="submit" onclick="display()"  class="size" >
+    <input type="reset"class="size">
+</fieldset>
+        </form></div>
+        <div id="instruction"><p id="info"></p>
+        </div>
+           </div>
+<hr>
+    <div class="homebutton">
+        <a href="main_web_file.html" >
+            Home Page
+        </a>
+    </div>
+    <script>
+          var text =document.getElementById("f_name");
+          console.log(text);
+    </script>
+</body>
+</html>
